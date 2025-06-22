@@ -42,7 +42,7 @@ class _SignupPageState extends State<SignupPage> {
                 contentPadding: const EdgeInsets.all(27),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    
+                    color: Colors.grey.shade300,
                   )
                 ),
               ),
