@@ -20,7 +20,9 @@ class _SignupPageState extends State<SignupPage> {
             style: TextStyle(
               fontSize: 50,
               fontWeight: FontWeight.bold,
-            ),)
+            ),),
+
+            TextFormField()
           ],
         ),
       )
