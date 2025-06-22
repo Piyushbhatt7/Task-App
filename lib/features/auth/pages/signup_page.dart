@@ -8,6 +8,7 @@ class SignupPage extends StatefulWidget {
 }
 
 class _SignupPageState extends State<SignupPage> {
+  final emailController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +24,7 @@ class _SignupPageState extends State<SignupPage> {
             ),),
 
             TextFormField(
-              validator: ,
+              validator: emailController.text,
             )
           ],
         ),
