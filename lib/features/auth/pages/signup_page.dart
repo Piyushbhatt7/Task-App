@@ -42,12 +42,16 @@ class _SignupPageState extends State<SignupPage> {
               ),
             ),
 
+            const SizedBox(height: 10,),
+
             TextFormField(
               controller: passwordController,
               decoration: InputDecoration(
                 hintText: 'Password'
               ),
             ),
+
+            const SizedBox(height: 10,),
 
             TextFormField(
               controller: nameController,
