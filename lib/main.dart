@@ -15,7 +15,22 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Task App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        inputDecorationTheme: InputDecoration(
+                hintText: 'Email',
+                contentPadding: const EdgeInsets.all(27),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Colors.grey.shade300,
+                    width: 3.0,
+                  ),
+                  borderRadius: BorderRadius.circular(10)
+                ),
+                focusedBorder: const OutlineInputBorder(
+                  borderSide: BorderSide(
+                    width: 3.0,
+                  ),
+                ),
+              ),
       ),
       home: const SignupPage(),
     );
