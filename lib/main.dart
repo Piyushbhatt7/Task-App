@@ -15,8 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Task App',
       theme: ThemeData(
-        inputDecorationTheme: InputDecoration(
-                hintText: 'Email',
+        inputDecorationTheme: InputDecorationTheme(
                 contentPadding: const EdgeInsets.all(27),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(
@@ -31,6 +30,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
+              useMaterial3: true,
       ),
       home: const SignupPage(),
     );
