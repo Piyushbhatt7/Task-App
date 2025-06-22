@@ -39,7 +39,8 @@ class _SignupPageState extends State<SignupPage> {
               controller: emailController,
               decoration: InputDecoration(
                 hintText: 'Email',
-                contentPadding: const EdgeInsets.all(27)
+                contentPadding: const EdgeInsets.all(27),
+                enabledBorder: OutlineInputBorder()
               ),
             ),
 
