@@ -44,7 +44,7 @@ class _SignupPageState extends State<SignupPage> {
             ),
 
             TextFormField(
-              
+              controller: nameController,
             )
           ],
         ),
