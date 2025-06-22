@@ -36,7 +36,7 @@ class _SignupPageState extends State<SignupPage> {
             ),),
 
             TextFormField(
-              validator: emailController.text,
+              controller: emailController,
             )
           ],
         ),
