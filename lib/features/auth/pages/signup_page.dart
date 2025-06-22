@@ -22,7 +22,9 @@ class _SignupPageState extends State<SignupPage> {
               fontWeight: FontWeight.bold,
             ),),
 
-            TextFormField()
+            TextFormField(
+              validator: ,
+            )
           ],
         ),
       )
