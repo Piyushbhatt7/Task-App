@@ -16,7 +16,8 @@ class _SignupPageState extends State<SignupPage> {
         children: [
           Text("Sign Up", 
           style: TextStyle(
-
+            fontSize: 50,
+            
           ),)
         ],
       )
