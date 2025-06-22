@@ -39,22 +39,21 @@ class _SignupPageState extends State<SignupPage> {
               controller: emailController,
               decoration: InputDecoration(
                 hintText: 'Email',
-                contentPadding: const EdgeInsets.all(27),
-                enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(
-                    color: Colors.grey.shade300,
-                    width: 3.0,
-                  ),
-                ),
               ),
             ),
 
             TextFormField(
               controller: passwordController,
+              decoration: InputDecoration(
+                hintText: 'Password'
+              ),
             ),
 
             TextFormField(
               controller: nameController,
+              decoration: InputDecoration(
+                hintText: 'Name'
+              ),
             )
           ],
         ),
