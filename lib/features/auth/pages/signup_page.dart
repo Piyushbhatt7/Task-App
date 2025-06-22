@@ -13,7 +13,10 @@ class _SignupPageState extends State<SignupPage> {
     return Scaffold(
       body: Column(
         children: [
-          Text("Sign Up")
+          Text("Sign Up", 
+          style: TextStyle(
+            
+          ),)
         ],
       )
       
