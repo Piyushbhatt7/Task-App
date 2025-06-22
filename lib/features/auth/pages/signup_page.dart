@@ -14,6 +14,13 @@ class _SignupPageState extends State<SignupPage> {
   final nameController = TextEditingController();
 
   @override
+  void dispose() {
+
+
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
