@@ -43,7 +43,8 @@ class _SignupPageState extends State<SignupPage> {
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(
                     color: Colors.grey.shade300,
-                  )
+                    width: 3.0,
+                  ),
                 ),
               ),
             ),
