@@ -8,17 +8,16 @@ class SignupPage extends StatefulWidget {
 }
 
 class _SignupPageState extends State<SignupPage> {
-
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final nameController = TextEditingController();
 
   @override
   void dispose() {
-  emailController.dispose();
-  passwordController.dispose();
-  nameController.dispose();
-  super.dispose();
+    emailController.dispose();
+    passwordController.dispose();
+    nameController.dispose();
+    super.dispose();
   }
 
   @override
@@ -29,40 +28,32 @@ class _SignupPageState extends State<SignupPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Sign Up", 
-            style: TextStyle(
-              fontSize: 50,
-              fontWeight: FontWeight.bold,
-            ),),
-
-            TextFormField(
-              controller: emailController,
-              decoration: InputDecoration(
-                hintText: 'Email',
-              ),
+            Text(
+              "Sign Up",
+              style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
             ),
 
-            const SizedBox(height: 10,),
-
-            TextFormField(
-              controller: passwordController,
-              decoration: InputDecoration(
-                hintText: 'Password'
-              ),
-            ),
-
-            const SizedBox(height: 10,),
+            const SizedBox(height: 10),
 
             TextFormField(
               controller: nameController,
-              decoration: InputDecoration(
-                hintText: 'Name'
-              ),
-            )
+              decoration: InputDecoration(hintText: 'Name'),
+            ),
+
+            TextFormField(
+              controller: emailController,
+              decoration: InputDecoration(hintText: 'Email'),
+            ),
+
+            const SizedBox(height: 10),
+
+            TextFormField(
+              controller: passwordController,
+              decoration: InputDecoration(hintText: 'Password'),
+            ),
           ],
         ),
-      )
-      
+      ),
     );
   }
 }
