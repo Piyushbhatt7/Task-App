@@ -12,7 +12,7 @@ class _SignupPageState extends State<SignupPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        
+        child: Text("Sign Up Page"),
       ),
     );
   }
