@@ -40,7 +40,7 @@ class _SignupPageState extends State<SignupPage> {
               decoration: InputDecoration(
                 hintText: 'Email',
                 contentPadding: const EdgeInsets.all(27),
-                enabledBorder: OutlineInputBorder()
+                enabledBorder: OutlineInputBorder(),
               ),
             ),
 
