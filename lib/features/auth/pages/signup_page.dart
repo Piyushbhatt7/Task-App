@@ -33,19 +33,21 @@ class _SignupPageState extends State<SignupPage> {
               style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
             ),
 
-            const SizedBox(height: 10),
+            const SizedBox(height: 30),
 
             TextFormField(
               controller: nameController,
               decoration: InputDecoration(hintText: 'Name'),
             ),
 
+            const SizedBox(height: 30.0,),
+
             TextFormField(
               controller: emailController,
               decoration: InputDecoration(hintText: 'Email'),
             ),
 
-            const SizedBox(height: 10),
+            const SizedBox(height: 30),
 
             TextFormField(
               controller: passwordController,
