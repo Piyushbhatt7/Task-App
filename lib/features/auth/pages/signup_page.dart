@@ -60,7 +60,9 @@ class _SignupPageState extends State<SignupPage> {
               onPressed: () {
                 
               },
-              child: Text("SignUp"),
+              child: Text("SignUp", style: TextStyle(
+                color: Colors.white
+              ),),
 
             )
           ],
