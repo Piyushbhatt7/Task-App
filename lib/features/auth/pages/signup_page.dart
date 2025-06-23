@@ -53,6 +53,16 @@ class _SignupPageState extends State<SignupPage> {
               controller: passwordController,
               decoration: InputDecoration(hintText: 'Password'),
             ),
+
+            const SizedBox(height: 20.0,),
+
+            ElevatedButton(
+              onPressed: () {
+                
+              },
+              child: Text("SignUp"),
+
+            )
           ],
         ),
       ),
