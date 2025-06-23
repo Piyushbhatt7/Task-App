@@ -12,12 +12,22 @@ class _SignupPageState extends State<SignupPage> {
   final passwordController = TextEditingController();
   final nameController = TextEditingController();
 
+  final formKey = GlobalKey<FormState>();
+
   @override
   void dispose() {
     emailController.dispose();
     passwordController.dispose();
     nameController.dispose();
+    formKey.currentState!.validate();
     super.dispose();
+  }
+  void signUpUser(){
+
+    if(formKey.currentState!.validate())
+    {
+
+    }
   }
 
   @override
@@ -25,47 +35,87 @@ class _SignupPageState extends State<SignupPage> {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(15),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              "Sign Up",
-              style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
-            ),
-
-            const SizedBox(height: 30),
-
-            TextFormField(
-              controller: nameController,
-              decoration: InputDecoration(hintText: 'Name'),
-            ),
-
-            const SizedBox(height: 15.0),
-
-            TextFormField(
-              controller: emailController,
-              decoration: InputDecoration(hintText: 'Email'),
-            ),
-
-            const SizedBox(height: 15),
-
-            TextFormField(
-              controller: passwordController,
-              decoration: InputDecoration(hintText: 'Password'),
-            ),
-
-            const SizedBox(height: 20.0,),
-
-            ElevatedButton(
-              onPressed: () {
-                
-              },
-              child: Text("SignUp", style: TextStyle(
-                color: Colors.white
-              ),),
-
-            )
-          ],
+        child: Form(
+          key: formKey,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "Sign Up",
+                style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+              ),
+          
+              const SizedBox(height: 30),
+          
+              TextFormField(
+                controller: nameController,
+                decoration: InputDecoration(hintText: 'Name'),
+                validator: (value)
+                {
+                  if(value == null || value.trim().isEmpty)
+                  {
+                    return "Name field cannot be empty!";
+                  }
+                  return null;
+                },
+              ),
+          
+              const SizedBox(height: 15.0),
+          
+              TextFormField(
+                controller: emailController,
+                decoration: InputDecoration(hintText: 'Email'),
+                 validator: (value)
+                {
+                  if(value == null || value.trim().isEmpty || value.contains("@"))
+                  {
+                    return "Email field is empty!";
+                  }
+                  return null;
+                },
+              ),
+          
+              const SizedBox(height: 15),
+          
+              TextFormField(
+                controller: passwordController,
+                decoration: InputDecoration(hintText: 'Password'),
+                 validator: (value)
+                {
+                  if(value == null || value.trim().isEmpty || value.trim().length < 6)
+                  {
+                    return "Password field is invalid!";
+                  }
+                  return null;
+                },
+              ),
+          
+              const SizedBox(height: 20.0),
+          
+              ElevatedButton(
+                onPressed: signUpUser,
+                child: Text(
+                  "SignUp",
+                  style: TextStyle(color: Colors.white, fontSize: 16.0),
+                ),
+              ),
+          
+              const SizedBox(height: 20.0),
+          
+              RichText(
+                text: TextSpan(
+                  text: 'Already have an account?',
+                  style: Theme.of(context).textTheme.titleMedium,
+                  children: [
+                    TextSpan(
+                      text: ' Sign In',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
