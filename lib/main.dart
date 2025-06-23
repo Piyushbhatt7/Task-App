@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_app/features/auth/pages/login_page.dart';
 import 'package:task_app/features/auth/pages/signup_page.dart';
 
 void main() {
@@ -53,7 +54,7 @@ class MyApp extends StatelessWidget {
               ),
               useMaterial3: true,
       ),
-      home: const SignupPage(),
+      home: const LoginPage(),
     );
   }
 }
