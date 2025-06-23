@@ -67,7 +67,7 @@ class _SignupPageState extends State<SignupPage> {
                 decoration: InputDecoration(hintText: 'Email'),
                  validator: (value)
                 {
-                  if(value == null || value.trim().isEmpty || value.contains("@"))
+                  if(value == null || value.trim().isEmpty || !value.contains("@"))
                   {
                     return "Email field is empty!";
                   }
@@ -82,7 +82,7 @@ class _SignupPageState extends State<SignupPage> {
                 decoration: InputDecoration(hintText: 'Password'),
                  validator: (value)
                 {
-                  if(value == null || value.trim().isEmpty || value.trim().length < 6)
+                  if(value == null || value.trim().isEmpty || value.trim().length <= 6)
                   {
                     return "Password field is invalid!";
                   }
