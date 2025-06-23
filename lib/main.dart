@@ -29,6 +29,17 @@ class MyApp extends StatelessWidget {
                     width: 3.0,
                   ),
                 ),
+
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  borderSide: BorderSide(
+                    width: 3.0
+                  )
+                ),
+                errorBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: BorderSide(
+                  color: Colors.red,
+                  width: 3.0
+                )),
               ),
 
               elevatedButtonTheme: ElevatedButtonThemeData(
