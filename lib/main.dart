@@ -30,6 +30,12 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
+
+              elevatedButtonTheme: ElevatedButtonThemeData(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.black,
+                )
+              ),
               useMaterial3: true,
       ),
       home: const SignupPage(),
