@@ -38,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Sign Up",
+                "LogIn",
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
               ),
           
@@ -77,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
               ElevatedButton(
                 onPressed: loginUser,
                 child: Text(
-                  "SignUp",
+                  "LogIn",
                   style: TextStyle(color: Colors.white, fontSize: 16.0),
                 ),
               ),
@@ -86,11 +86,11 @@ class _LoginPageState extends State<LoginPage> {
           
               RichText(
                 text: TextSpan(
-                  text: 'Already have an account?',
+                  text: "Don't have an account?",
                   style: Theme.of(context).textTheme.titleMedium,
                   children: [
                     TextSpan(
-                      text: ' Sign In',
+                      text: 'Sign Up',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ],
