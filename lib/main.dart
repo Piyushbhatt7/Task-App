@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
               elevatedButtonTheme: ElevatedButtonThemeData(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.black,
+                  minimumSize: const Size(double.infinity, 60)
                 )
               ),
               useMaterial3: true,
