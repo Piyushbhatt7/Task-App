@@ -106,9 +106,9 @@ class _SignupPageState extends State<SignupPage> {
                 text: TextSpan(
                   text: 'Already have an account?',
                   style: Theme.of(context).textTheme.titleMedium,
-                  children: [
+                  children: const [
                     TextSpan(
-                      text: ' Sign In',
+                      text: 'LogIn',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ],
