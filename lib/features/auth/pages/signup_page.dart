@@ -40,14 +40,14 @@ class _SignupPageState extends State<SignupPage> {
               decoration: InputDecoration(hintText: 'Name'),
             ),
 
-            const SizedBox(height: 30.0,),
+            const SizedBox(height: 15.0),
 
             TextFormField(
               controller: emailController,
               decoration: InputDecoration(hintText: 'Email'),
             ),
 
-            const SizedBox(height: 30),
+            const SizedBox(height: 15),
 
             TextFormField(
               controller: passwordController,
