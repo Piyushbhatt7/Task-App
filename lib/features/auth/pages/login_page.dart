@@ -25,7 +25,7 @@ class _LoginPageState extends State<LoginPage> {
     {
 
     }
-  }  login page
+  }   
 
   @override
   Widget build(BuildContext context) {
