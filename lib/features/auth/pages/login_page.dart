@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
           
               TextFormField(
                 controller: emailController,
-                decoration: InputDecoration(hintText: 'Email'),      
+                decoration: InputDecoration(hintText: 'Email'),       
                  validator: (value)
                 {
                   if(value == null || value.trim().isEmpty || !value.contains("@"))  
