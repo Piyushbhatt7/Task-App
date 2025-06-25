@@ -49,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
                 decoration: InputDecoration(hintText: 'Email'),                 
                  validator: (value)
                 {
-                  if(value == null || value.trim().isEmpty || !value.contains("@"))      
+                  if(value == null || value.trim().isEmpty || !value.contains("@"))       
                   {
                     return "Email field is empty!"; 
                   }
