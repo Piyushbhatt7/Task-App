@@ -84,16 +84,18 @@ class _LoginPageState extends State<LoginPage> {
           
               const SizedBox(height: 20.0),
           
-              RichText(
-                text: TextSpan(
-                  text: "Don't have an account?",
-                  style: Theme.of(context).textTheme.titleMedium,
-                  children: [
-                    TextSpan(
-                      text: ' Sign Up',
-                      style: TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                  ],
+              GestureDetector(
+                child: RichText(
+                  text: TextSpan(
+                    text: "Don't have an account?",
+                    style: Theme.of(context).textTheme.titleMedium,
+                    children: [
+                      TextSpan(
+                        text: ' Sign Up',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
