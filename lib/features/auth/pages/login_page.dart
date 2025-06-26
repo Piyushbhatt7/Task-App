@@ -86,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
           
               GestureDetector(
                 onTap: () {
-                    Navigator.of(context).push()                 
+                    Navigator.of(context).push()
                 },
                 child: RichText(
                   text: TextSpan(
@@ -95,7 +95,7 @@ class _LoginPageState extends State<LoginPage> {
                     children: [
                       TextSpan(
                         text: ' Sign Up',
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        style: TextStyle(fontWeight: FontWeight.bold), 
                       ),
                     ],
                   ),
