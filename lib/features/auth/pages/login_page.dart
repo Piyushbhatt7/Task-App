@@ -85,6 +85,9 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(height: 20.0),
           
               GestureDetector(
+                onTap: () {
+                  
+                },
                 child: RichText(
                   text: TextSpan(
                     text: "Don't have an account?",
