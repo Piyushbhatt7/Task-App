@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_app/features/auth/pages/signup_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -86,7 +87,7 @@ class _LoginPageState extends State<LoginPage> {
           
               GestureDetector(
                 onTap: () {
-                    Navigator.of(context).push() 
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignupPage()));
                 },
                 child: RichText(
                   text: TextSpan(
