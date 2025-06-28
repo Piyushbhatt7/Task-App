@@ -77,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
             
               ElevatedButton(
                 onPressed: loginUser,          
-                child: Text( 
+                child: Text(  
                   "LogIn",
                   style: TextStyle(color: Colors.white, fontSize: 16.0),    
                 ),
