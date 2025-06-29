@@ -32,7 +32,7 @@ class _SignupPageState extends State<SignupPage> {
     }
   }
 
-  @override               
+  @override                
   Widget build(BuildContext context) {  
     return Scaffold(
       body: Padding( 
