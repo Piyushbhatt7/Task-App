@@ -35,7 +35,7 @@ class _SignupPageState extends State<SignupPage> {
   @override               
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
+      body: Padding( 
         padding: const EdgeInsets.all(15), 
         child: Form(
           key: formKey,
