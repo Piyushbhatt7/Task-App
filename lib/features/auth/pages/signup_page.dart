@@ -39,7 +39,7 @@ class _SignupPageState extends State<SignupPage> {
         padding: const EdgeInsets.all(15), 
         child: Form( 
           key: formKey,
-          child: Column(
+          child: Column( 
             mainAxisAlignment: MainAxisAlignment.center, 
             children: [
               Text(
