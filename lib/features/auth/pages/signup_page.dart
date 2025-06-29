@@ -37,7 +37,7 @@ class _SignupPageState extends State<SignupPage> {
     return Scaffold(
       body: Padding( 
         padding: const EdgeInsets.all(15), 
-        child: Form(
+        child: Form( 
           key: formKey,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, 
