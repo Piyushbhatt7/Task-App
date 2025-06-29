@@ -40,7 +40,7 @@ class _SignupPageState extends State<SignupPage> {
         child: Form(
           key: formKey,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center, 
             children: [
               Text(
                 "Sign Up",
