@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class SignupPage extends StatefulWidget {
 
-  static route() => MaterialPageRoute(builder: (context) => SignupPage());
+  static MaterialPageRoute route() => MaterialPageRoute(builder: (context) => SignupPage());
   const SignupPage({super.key});
 
   @override
