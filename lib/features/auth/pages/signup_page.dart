@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_app/features/auth/pages/login_page.dart';
 
 class SignupPage extends StatefulWidget {
 
@@ -104,16 +105,21 @@ class _SignupPageState extends State<SignupPage> {
           
               const SizedBox(height: 20.0),
           
-              RichText(
-                text: TextSpan(
-                  text: 'Already have an account?',
-                  style: Theme.of(context).textTheme.titleMedium,
-                  children: const [
-                    TextSpan(
-                      text: ' LogIn',
-                      style: TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                  ],
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(LoginPage.route());
+                },
+                child: RichText(
+                  text: TextSpan(
+                    text: 'Already have an account?',
+                    style: Theme.of(context).textTheme.titleMedium,
+                    children: const [
+                      TextSpan(
+                        text: ' LogIn',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
