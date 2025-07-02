@@ -2,6 +2,8 @@ import express from "express";
 
 const app = express();
 
+app.use
+
 app.get("/", (req, res) => {
     res.send("Welcome to my app");
 });
