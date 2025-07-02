@@ -15,3 +15,5 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: test123
       POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"
