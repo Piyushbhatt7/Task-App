@@ -5,4 +5,4 @@ services:
     ports:
       -"8000:8000"
     environment:
-      - name=value
+      - PORT=8000
