@@ -6,4 +6,8 @@ services:
       -"8000:8000"
     environment:
       - PORT=8000
-      - DATABASE_URL=postgresql://postgres:piyush@123
+      - DATABASE_URL=postgresql://postgres:piyush@123@mydb:5434/mydb
+
+  db:
+    image: postgres:15
+    container_name: postgres_container
