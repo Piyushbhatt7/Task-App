@@ -7,5 +7,5 @@ pgTable("users", {
     name: text("name").notNull().unique(),
     email: text("email").notNull().unique(),
     password: text("password").notNull(),
-    createdAt: timestamp("created_at")
+    createdAt: timestamp("created_at").defaultNow(),
 })
