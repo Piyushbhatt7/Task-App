@@ -2,4 +2,6 @@ import { Router } from "express";
 
 const authRouter = Router();
 
-authRouter.get
+authRouter.get("/", (req, res) => {
+    res.send
+})
