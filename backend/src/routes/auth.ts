@@ -27,7 +27,7 @@ authRouter.post("/signup", async (req: Request<{}, {}, SignUpBody>, res: Respons
             return;
         }
         // hashed password  
-        // create a new  user and store in db
+        // create a new  user and store in db 
     } catch (error) {
         res.status(500).json({ error: error });
     }
