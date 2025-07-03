@@ -34,7 +34,7 @@ authRouter.post("/signup", async (req: Request<{}, {}, SignUpBody>, res: Respons
 });
 
 authRouter.get("/", (req, res) => {
-    res.send("Hey there! from auth");
+    res.send("Hey there! from auth"); // 1:36 
 });
 
 export default authRouter;
