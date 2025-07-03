@@ -5,7 +5,7 @@ const authRouter = Router();
 
 authRouter.post("/signup", async (req, res) => {
     try {
-        
+        // create a new  user and store in db
     } catch (error) {
         res.status(500).json({error: error});
     }
