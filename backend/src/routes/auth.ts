@@ -20,10 +20,11 @@ authRouter.post("/signup", async (req: Request<{}, {}, SignUpBody>, res: Respons
 
         if(existingUser.length)
         {
-            return res.status(400)
+            res.status(400)
             .json({
                 msg: "User with the same email already exists!"
             });
+            return;
         }
         // hashed password
         // create a new  user and store in db
