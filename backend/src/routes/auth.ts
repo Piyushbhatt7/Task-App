@@ -1,5 +1,6 @@
 import { drizzle } from "drizzle-orm/singlestore/driver";
 import { Router, Request, Response } from "express";
+import { db, users } from "../db/schema";
 
 const authRouter = Router();
 
@@ -14,6 +15,7 @@ authRouter.post("/signup", async (req: Request<{}, {}, SignUpBody>, res: Respons
         // get req body
         const {name, email, password} = req.body;
         // check if user already exists
+        const existingUsers = await db.select().from(users).where(users.email, email)
         // hashed password
         // create a new  user and store in db
     } catch (error) {
