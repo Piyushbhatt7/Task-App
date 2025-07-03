@@ -1,5 +1,5 @@
 import { drizzle } from "drizzle-orm/singlestore/driver";
-import { Router, Request } from "express";
+import { Router, Request, Response } from "express";
 
 const authRouter = Router();
 
@@ -9,7 +9,7 @@ interface SignUpBody {
     password: string;
 }
 
-authRouter.post("/signup", async (req: Request<{}, {}, SignUpBody>, res) => {
+authRouter.post("/signup", async (req: Request<{}, {}, SignUpBody>, res: Response) => {
     try {
         // get req body
         req.body;
