@@ -7,8 +7,8 @@ const authRouter = Router();
 
 interface SignUpBody {
     name: string;
-    email: string;
-    password: string;
+    email: string; 
+    password: string; 
 }
 
 authRouter.post("/signup", async (req: Request<{}, {}, SignUpBody>, res: Response) => {
