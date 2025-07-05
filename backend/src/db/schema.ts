@@ -7,7 +7,7 @@ export const users = pgTable("users", {
     password: text("password").notNull(),
     createdAt: timestamp("created_at").defaultNow(),
     updatedAt: timestamp("upload_at").defaultNow(), 
-});     
+});      
       
 export type User = typeof users.$inferSelect;
 export type NewUser = typeof users.$inferInsert;
